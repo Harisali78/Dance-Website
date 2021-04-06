@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Our Dance Academy
+        div.small Dance A Natural Healer
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img1.jpg")
+
+                div.card-content
+                    p This is the best dance academy of the World
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img4.jpg")
+
+                div.card-content
+                    p This is the best dance academy of the World
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img2.jpg")
+
+                div.card-content
+                    p This is the best dance academy of the World
+
+    section#sponsorSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.jpg", alt="sponsor image", class="spImage")
+            img(src="/static/img/logo2.jpg", alt="sponsor image", class="spImage")
+            img(src="/static/img/logo4.png", alt="sponsor image", class="spImage")
+            img(src="/static/img/logo5.png", alt="sponsor image", class="spImage")
+    
